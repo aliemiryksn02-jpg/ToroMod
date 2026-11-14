@@ -1,14 +1,14 @@
 {
-  "geode": "2.2081",
+  "geode": "v3.8.1",
   "gd": {
-    "android": "*",
     "win": "2.2074",
+    "android": "2.2074",
     "mac": "2.2074"
   },
   "id": "toro.mod",
   "name": "Toro Mod",
   "version": "v1.0.0",
   "developers": ["Toro"],
-  "description": "Toro the cat",
+  "description": "Toro the glasses owo cat",
   "resources": {}
 }
