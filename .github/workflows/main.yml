@@ -2,20 +2,19 @@ name: Build
 on:
   push:
   workflow_dispatch:
-
 jobs:
   build:
     strategy:
       fail-fast: false
       matrix:
         config:
-        - name: Windows
+        - name: "Windows"
           os: windows-latest
-        - name: macOS
+        - name: "macOS"
           os: macos-latest
-        - name: Android32
+        - name: "Android32"
           os: ubuntu-latest
-        - name: Android64
+        - name: "Android64"
           os: ubuntu-latest
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
@@ -31,7 +30,6 @@ jobs:
         with:
           name: ${{ matrix.config.name }} Build
           path: ./build/*.geode
-
   combine:
     name: Combine Builds
     runs-on: ubuntu-latest
@@ -46,7 +44,7 @@ jobs:
         id: combine
         with:
           build-folder: ./builds/
-          out-file: ./${{ github.event.repository.name }}.geode
+          out-file: ./toro-mod.geode
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
