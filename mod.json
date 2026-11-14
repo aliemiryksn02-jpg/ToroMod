@@ -1,9 +1,14 @@
 {
-  "geode": "v5.6.1",
-  "gd": "2.2081",
+  "geode": "2.2081",
+  "gd": {
+    "android": "*",
+    "win": "2.2074",
+    "mac": "2.2074"
+  },
+  "id": "toro.mod",
+  "name": "Toro Mod",
   "version": "v1.0.0",
-  "id": "aliemiryksn02.owomod",
-  "name": "OwO Mod",
   "developers": ["Toro"],
-  "description": "Gozluklu owo kedisi"
+  "description": "Toro the cat",
+  "resources": {}
 }
