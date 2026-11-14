@@ -7,7 +7,7 @@ project(toromod VERSION 1.0.0)
 add_library(${PROJECT_NAME} SHARED src/main.cpp)
 
 if (NOT DEFINED ENV{GEODE_SDK})
-    message(FATAL_ERROR "Unable to find Geode SDK! Please define GEODE_SDK environment variable to locate Geode SDK (not Mod Dev Kit).")
+    message(FATAL_ERROR "Unable to find Geode SDK!")
 else()
     message(STATUS "Found Geode: $ENV{GEODE_SDK}")
 endif()
